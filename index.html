@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .scroll-trigger {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .scroll-trigger.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-lg p-4">
+        <nav class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-indigo-600">My Portfolio</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-indigo-600 font-medium transition-colors">Home</a></li>
+                <li><a href="#about" class="hover:text-indigo-600 font-medium transition-colors">About</a></li>
+                <li><a href="#skills" class="hover:text-indigo-600 font-medium transition-colors">Skills</a></li>
+                <li><a href="#projects" class="hover:text-indigo-600 font-medium transition-colors">Projects</a></li>
+                <li><a href="#contact" class="hover:text-indigo-600 font-medium transition-colors">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home/Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center p-8 bg-gradient-to-br from-indigo-50 to-white">
+        <div class="container mx-auto text-center">
+            <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12">
+                <img src="my image1.JPG" alt="Your Photo" class="w-40 h-40 rounded-full shadow-lg border-4 border-white transform hover:scale-105 transition-transform duration-300">
+                <div class="text-left max-w-xl">
+                    <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-800 leading-tight">Hi, I'm Subhrajit Nayak</h2>
+                    <h3 class="text-2xl sm:text-3xl font-semibold text-indigo-600 mt-2">A passionate Front-End Developer</h3>
+                    <p class="text-gray-600 mt-4 text-lg">
+                        I specialize in creating beautiful, responsive, and user-friendly web applications. With a strong foundation in modern web technologies, I'm eager to bring innovative solutions to life.
+                    </p>
+                    <a href="#projects" class="mt-6 inline-block bg-indigo-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-700 transition-colors duration-300">
+                        View My Work
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-8">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-6 text-gray-800 scroll-trigger">About Me</h2>
+            <p class="text-gray-600 text-lg text-center max-w-3xl mx-auto leading-relaxed scroll-trigger mt-4">
+                I am an aspiring Front-End Developer with a strong passion for building elegant and intuitive user interfaces. My journey began with a curiosity for how websites work, which quickly evolved into a love for crafting code that directly impacts user experience. I'm a quick learner and thrive in collaborative environments, always seeking new challenges to grow my skills and contribute to impactful projects.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-8 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800 scroll-trigger">My Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Front-End Skills -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 scroll-trigger">
+                    <h3 class="text-2xl font-bold text-indigo-600 mb-4">Front-End Development</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-700">
+                            <span class="mr-2 text-indigo-500">&#9679;</span> HTML, CSS, JavaScript (ES6+)
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <span class="mr-2 text-indigo-500">&#9679;</span> React.js
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <span class="mr-2 text-indigo-500">&#9679;</span> Tailwind CSS
+                        </li>
+                    </ul>
+                </div>
+                <!-- Other Skills -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 scroll-trigger">
+                    <h3 class="text-2xl font-bold text-indigo-600 mb-4">Other Technologies</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-700">
+                            <span class="mr-2 text-indigo-500">&#9679;</span> C++
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <span class="mr-2 text-indigo-500">&#9679;</span> MySQL
+                        </li>
+                    </ul>
+                </div>
+                 <!-- Soft Skills -->
+                 <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 scroll-trigger">
+                    <h3 class="text-2xl font-bold text-indigo-600 mb-4">Soft Skills</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-700">
+                            <span class="mr-2 text-indigo-500">&#9679;</span> Complex Problem Resolution
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <span class="mr-2 text-indigo-500">&#9679;</span> Collaboration
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <span class="mr-2 text-indigo-500">&#9679;</span> Leadership
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-8">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800 scroll-trigger">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 scroll-trigger">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">SoundSync: Collaborative Music Hub</h3>
+                    <p class="text-gray-600 mb-4">
+                        A real-time web application where friends can collaboratively build and manage a music playlist.
+                    </p>
+                    <a href="#" class="inline-block bg-indigo-600 text-white font-medium py-2 px-6 rounded-full hover:bg-indigo-700 transition-colors">
+                        View Project
+                    </a>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 scroll-trigger">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">YouTube Clone with Smart Content Features</h3>
+                    <p class="text-gray-600 mb-4">
+                        A dynamic front-end clone of YouTube with a unique "AI-Powered" content summarizer feature.
+                    </p>
+                    <a href="#" class="inline-block bg-indigo-600 text-white font-medium py-2 px-6 rounded-full hover:bg-indigo-700 transition-colors">
+                        View Project
+                    </a>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 scroll-trigger">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Personalized Meal Planner & Grocery List</h3>
+                    <p class="text-gray-600 mb-4">
+                        A single-page application that helps users plan their weekly meals and automatically generates a consolidated grocery list.
+                    </p>
+                    <a href="#" class="inline-block bg-indigo-600 text-white font-medium py-2 px-6 rounded-full hover:bg-indigo-700 transition-colors">
+                        View Project
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-8 bg-gray-800 text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6 scroll-trigger">Get In Touch</h2>
+            <p class="text-gray-300 text-lg max-w-2xl mx-auto scroll-trigger">
+                I am actively seeking new opportunities and would love to connect! Feel free to reach out to me via email or connect on LinkedIn.
+            </p>
+            <div class="mt-8 flex justify-center space-x-6">
+                <a href="mailto:subhrajitnayak.iter26@gmail.com" class="text-white hover:text-indigo-400 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/>
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/in/subhrajitnayak30" target="_blank" class="text-white hover:text-indigo-400 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zm-.5 15.5v-5.69c0-.44-.36-.8-.8-.8h-.44c-.44 0-.8.36-.8.8v5.69h-2.1V9.5h2.1v.96h.04c.2-.36.6-.76 1.4-.76 1.5 0 2.5 1.02 2.5 3.12v6.68h-2.1zM8.5 7.6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM9.6 9.5H7.5V18.5H9.6V9.5z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/DigitalEyeDev" target="_blank" class="text-white hover:text-indigo-400 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor">
+                        <path fill-rule="evenodd" d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.11.82-.26.82-.585 0-.29-.01-1.05-.01-2.06-3.337.72-4.041-1.61-4.041-1.61-.546-1.386-1.332-1.755-1.332-1.755-1.087-.745.083-.73.083-.73 1.205.085 1.838 1.238 1.838 1.238 1.07 1.835 2.809 1.305 3.492.99.108-.77.419-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.466-2.38 1.235-3.22-.124-.3-.535-1.52.117-3.175 0 0 1.006-.322 3.3.998.95-264 2.21-396 3.46-.399 1.25.132 2.51.132 3.46-.399 2.295-1.32 3.298-.998 3.3.998.769.84 1.235 1.91 1.235 3.22 0 4.61-2.802 5.626-5.474 5.922.43.37.823 1.102.823 2.22 0 1.605-.015 2.895-.015 3.284 0 .326.21.69.825.58C20.565 21.802 24 17.302 24 12c0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 text-center py-6 px-8">
+        <p class="text-sm">&copy; 2024 Your Name. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Intersection Observer for fade-in effect on scroll
+        const scrollTriggers = document.querySelectorAll('.scroll-trigger');
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.2
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        scrollTriggers.forEach(trigger => {
+            observer.observe(trigger);
+        });
+    </script>
+</body>
+</html>
